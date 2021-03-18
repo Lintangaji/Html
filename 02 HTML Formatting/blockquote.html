@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-<title>Definisi Block Quotes</title>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
+<title>Tentang Element / Tag Block Quotes</title>
+
 </head>
 <body>
-    <h1>Tag &lt;blockquote&gt;</h1>
+    <h1>Tentang Element / Tag &lt;blockquote&gt;</h1>
     <p>Di bawah ini adalah contoh paragraph yang di kutip dari halaman / web apacara tentang blockquote</p>
+    
+    
+    <h2>Contoh Penulisan</h2>
+    
+       <pre class="html">
+     <code>
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html Blockquote&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;blockquote cite="https://www.google.com/amp/s/www.apacara.com/tutorial/html/html-blockquote-tag.html"&#62;
+  
+   &#60;p&#62;Tag blockquote digunakan untuk menunjukkan sebuah konten yang dikutip dari sumber lain.
+  Jika kutipan bersumber dari alamat web (URL), maka URL harus ditulis pada attribute cite di dalam element blockquote, sedangkan keterangan yang menunjukkan sumber kutipan tersebut ditulis pada element cite.
+blockquote element biasanya memiliki style teks dengan indentasi yang agak merapat ke dalam.&#60;/p&#62;
+
+  &#60;/blockquote&#62;
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+     </code>
+   </pre>
+   
+    
+    
     <blockquote cite="https://www.google.com/amp/s/www.apacara.com/tutorial/html/html-blockquote-tag.html">
       <p>Tag &lt;blockquote&gt; digunakan untuk menunjukkan sebuah konten yang dikutip dari sumber lain.
 
   Jika kutipan bersumber dari alamat web (URL), maka URL harus ditulis pada attribute cite di dalam element blockquote, sedangkan keterangan yang menunjukkan sumber kutipan tersebut ditulis pada element &lt;cite&gt;.
 blockquote element biasanya memiliki style teks dengan indentasi yang agak merapat ke dalam.</p>
     </blockquote>
+    
+    
+    
+    
   <p> &lt;blockquote&gt; element digunakan untuk blok kutipan panjang, sedangkan untuk kutipan pendek yang terletak didalam baris (inline) menggunakan &lt;q&gt; element.
 
 Untuk merubah tampilan indentasi, dapat menggunakan CSS Margin property.</p>
@@ -38,6 +75,7 @@ Untuk merubah tampilan indentasi, dapat menggunakan CSS Margin property.</p>
 
 <p>Untuk Keterangan Lebih Jelas Silahkan Kunjungi situs <a href="https://www.google.com/amp/s/www.apacara.com/tutorial/html/html-blockquote-tag.html" target="_blank">apacara</a></p>
 
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
