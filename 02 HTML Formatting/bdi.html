@@ -3,18 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Definisi tag bdi</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
+    <title>Tentang Element / Tag bdi</title>
 </head>
 
 <body>
   
   <header>
-    <h1>Definisi Dan Cara Penggunaan Tag &lt;bdi&gt;</h1>
+    <h1>Tentang Element / Tag &lt;bdi&gt;</h1>
   </header>
   <!-- Header End -->
   
   <section>
     <p>Pada contoh di bawah ini, nama pengguna ditampilkan bersama dengan jumlah poin dalam sebuah kontes.  Jika tag &lt;bdi&gt; tidak didukung di browser, nama pengguna bahasa Arab akan membingungkan teks. (algoritme dua arah <mark>akan meletakkan titik dua dan angka "90" di sebelah kata "pemain"</mark> dari pada di samping kata "poin  ").</p>
+    
+    <h2>Contoh Penulisan</h2>
+    
+       <pre class="html">
+     <code>
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html bdi&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;ul&#62;
+  
+  &#60;li&#62;pemain &#60;bdi&#62;Michael&#60;/bdi&#62;: 60 point&#60;/li&#62; 
+  
+  &#60;li&#62;pemain &#60;bdi&#62;Axel&#60;/bdi&#62;: 60 point&#60;/li&#62; 
+  
+  &#60;li&#62;pemain &#60;bdi&#62;Dewilma&#60;/bdi&#62;: 60 point&#60;/li&#62; 
+  
+  &#60;li&#62;pemain &#60;bdi&#62لينتغ&#60;/bdi&#62;: 60 point&#60;/li&#62; 
+  
+  &#60;li&#62;pemain تابا: 60 point&#60;/li&#62; 
+
+  &#60;/ul&#62; 
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+     </code>
+   </pre>
+   
+    
+    <h2>Hasil Penulisan</h2>
     <ul>
       <li>pemain <bdi>Michel</bdi>: 60 point </li>
       <li>pemain <bdi>Axel</bdi>: 60 point</li>
@@ -29,5 +66,8 @@
   </section>
   <!-- Keterangan End -->
 
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 </html>

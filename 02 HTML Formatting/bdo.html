@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Definisi tag bdo</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
+    <title>Tentang Element / Tag bdo</title>
 </head>
 
 <body>
-  
   <header>
-    <h1>Definisi Dan Cara Penggunaan Tag &lt;bdo&gt;</h1>
+    <h1>Tentang Element / Tag &lt;bdo&gt;</h1>
   </header>
 <!-- Header End -->
   <section>
     <p>BDO adalah singkatan dari Bi-Directional Override.
       Tag &lt;bdo&gt; digunakan untuk mengesampingkan arah teks saat ini / mengubah arah text dari kiri ke kanan. </p>
-      <strong>Contoh :</strong>
+     
+   <h2>Contoh Penulisan</h2>
+   
+      <pre class="html">
+     <code>
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html bdo&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;p&#62;text ini di bungkus hanya menggunakan tag p&#60;/p&#62; 
+  
+  &#60;p&#62;&#60;bdo dir="rtl"&#62;text ini di bungkus hanya menggunakan tag p dan bdo&#60;/bdo&#62;&#60;/p&#62; 
+  
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+     </code>
+   </pre>
+      
+   <h2>Hasil Penulisan</h2>
+      
     <p>text ini di bungkus hanya menggunakan tag &lt;p&gt;</p>
     <p><bdo dir="rtl">text ini di bungkus dengan menggunakan tag &lt;bdo&gt;</bdo></p>
     <hr />
@@ -31,6 +57,8 @@
     <p>Untuk Keterangan Lebih Jelas Bisa Di Lihat Di Web Site <a href="https://www.w3schools.com/tags/tag_bdo.asp" target="_blank">W3school</a></p>
   </section>
 <!-- Keterangan End -->
-</body>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
 </html>
