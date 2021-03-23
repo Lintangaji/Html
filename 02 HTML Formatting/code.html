@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
     <title>Tentang Element Code</title>
 </head>
 
@@ -16,7 +18,35 @@
 <h2>Contoh Penulisan</h2>
 
 <p>
-  Di Bawah Ini Merupakan code / bahasa javascript <br /> <br />
+  Di Bawah Ini Merupakan code / bahasa javascript <br />
+  
+  <pre class="html">
+  <code>
+    
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html Code&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+    /*Global styles*/
+      *,
+      *::before,
+      *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      }
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+    
+  </code>
+</pre>
+  
  <code>const selectElement = function (element) { return document.querySelector(element);</code>
 </p>
 <hr />
@@ -37,6 +67,8 @@
   Untuk Keterangan Lebih Jelas Bisa Di Lihat Di Web Site <a href="https://www.w3schools.com/tags/tag_code.asp" target="_blank">W3school</a>
 </p>
 
-</body>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
 </html>
