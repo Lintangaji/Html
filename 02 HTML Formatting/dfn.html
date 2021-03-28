@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
     <title>Tentang Element / Tag &lt;dfn&gt;</title>
 </head>
 <body>
@@ -15,77 +17,134 @@
 
 Penjelasan dari istilah ditulis secara langsung setelah &lt;dfn&gt; element dan terletak didalam element yang menaunginya tersebut.</p>
 
-<h2>Contoh Penulisan</h2>
+<h2>Contoh 1</h2>
 
-<h3>Contoh 1</h3>
-<p>Contoh &lt;dfn&gt; element yang menjelaskan Definisi / arti / kegunaan dari HTML</p>
+<p>Contoh &#60;dfn&#62; element yang menjelaskan Definisi "HTML" </p>
 
-<div style="border: 2px solid #0180cf; height: 70px; overflow-x: scroll; overflow-y: scroll; width: auto;">
-<div style="width: 1000%;">
-<ol>
-  <li> &lt;p&gt;</li>
-  <li> &lt;dfn&gt;HTML&lt;&frasl;dfn&gt; adalah bahasa markup yang digunakan untuk memformat struktur halaman web.</li>
-  <li> &lt;&frasl;p&gt;</li>
-</ol>
-</div>
-</div>
 
-<h3>Contoh 2</h3>
+<pre class="html">
+  <code>
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html dfn&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;p&#62; 
+  
+  &#60;dfn&#62;HTML&#60;/dfn&#62; adalah bahasa markup yang di gunakan untuk memformat halaman web. 
+  
+  &#60;/p&#62; 
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+  </code>
+</pre>
 
-<p>Contoh &lt;dfn&gt; element menggunakan Atribut <ins>Title</ins></p>
+<h2>Contoh 2</h2>
 
-<div style="border: 2px solid #0180cf; height: 70px; overflow-x: scroll; overflow-y: scroll; width: auto;">
-<div style="width: 1000%;">
-<ol>
-  <li> &lt;p&gt;</li>
-  <li> &lt;dfn title="Hypertext Markup Language"&gt;HTML&lt;&frasl;dfn&gt; adalah bahasa markup yang digunakan untuk memformat struktur halaman web.</li>
-  <li> &lt;&frasl;p&gt;</li>
-</ol>
-</div>
-</div>
+<p>Contoh &#60;dfn&#62; element dengan atribut title</p>
 
-<h3>Contoh 3</h3>
 
-<p>Contoh &lt;dfn&gt; Dengan menggunakan Tag &lt;Abbr&gt; di dalamnya</p>
+<pre class="html">
+  <code>
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html dfn&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;p&#62; 
+  
+  &#60;dfn title="Hypertext Markup Language"&#62;HTML&#60;/dfn&#62; adalah bahasa markup yang di gunakan untuk memformat halaman web. 
+  
+  &#60;/p&#62; 
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+  </code>
+</pre>
 
-<div style="border: 2px solid #0180cf; height: 70px; overflow-x: scroll; overflow-y: scroll; width: auto;">
-<div style="width: 1000%;">
-<ol>
-  <li>&lt;p&gt;</li>
-  <li>&lt;dfn&gt;</li>
-  <li>&lt;Abbr title="Hypertext Markup Language"&gt;</li>
-  <li>HTML</li>
-  <li> &lt;&frasl;Abbr&gt;</li>
-  <li> &lt;&frasl;dfn&gt;</li>
-  adalah bahasa markup yang digunakan untuk memformat struktur halaman web.
-  <li> &lt;&frasl;p&gt;</li>
-</ol>
-</div>
-</div>
 
-<h3>Contoh 4</h3>
-<p>
-  Contoh Lengkap Tag  &lt;dfn&gt; dengan atribut id <br />
-  sehingga bisa digunakan untuk mereferensikan definisi yang merujuk pada id tersebut menggunakanan  &lt;a&gt; element.
+<h2>Contoh 3</h2>
+
+<p>Contoh &#60;dfn&#62; dengan  &#60;abbr&#62; element di dalam nya </p>
+
+
+<pre class="html">
+  <code>
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html dfn&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;p&#62; 
+  
+    &#60;dfn&#62;
+    &#60;abbr title="Hypertext Markup Language"&#62;
+     HTML
+    &#60;/abbr&#62;
+    &#60;/dfn&#62; adalah bahasa markup yang di gunakan untuk memformat halaman web. 
+  
+  &#60;/p&#62; 
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+  </code>
+</pre>
+
+
+<h2>Contoh 4</h2>
+
+<p>Contoh &#60;dfn&#62; element menggunakan id, sehingga bisa digunakan untuk mereferensikan definisi yang merujuk pada id tersebut menggunakanan &#60;a&#62; element
 </p>
 
-<div style="border: 2px solid #0180cf; height: 70px; overflow-x: scroll; overflow-y: scroll; width: auto;">
-<div style="width: 1000%;">
-<ol>
-  <li>&lt;p&gt;</li>
-  <li>&lt;dfn id="html-def"&gt;</li>
-  <li>&lt;Abbr title="Hypertext Markup Language"&gt;</li>
-  <li>HTML</li>
-  <li> &lt;&frasl;Abbr&gt;</li>
-  <li> &lt;&frasl;dfn&gt;</li>
-  adalah bahasa markup yang digunakan untuk memformat struktur halaman web.
-  <li> &lt;&frasl;p&gt;</li>
-</ol>
-</div>
-</div>
-<br />
+
+<pre class="html">
+  <code>
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html dfn&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;p&#62; 
+  
+    &#60;dfn id="definisi-html"&#62;
+    &#60;abbr title="Hypertext Markup Language"&#62;
+     HTML
+    &#60;/abbr&#62;
+    &#60;/dfn&#62; adalah bahasa markup yang di gunakan untuk memformat halaman web. 
+  
+  &#60;/p&#62; 
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+  </code>
+</pre>
+
+
+
+
 <p>
   untuk Keterangan lebih jelas silahkan Kunjungi situsweb <a href="https://www.w3schools.com/tags/tag_dfn.asp" target="_blank">W3school</a> atau web <a href="https://www.google.com/amp/s/www.apacara.com/tutorial/html/html-dfn-tag.html">apacara</a>
 </p>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 </html>

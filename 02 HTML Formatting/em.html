@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
     <title>Tentang Element / Tag &lt;em&gt;</title>
 </head>
 <body>
@@ -17,17 +19,25 @@ Dengan demikian, &lt;em&gt; digunakan untuk memarkup konten dengan maksud member
 <h2>Contoh 1</h2>
 <p>memberi penekanan kata "binatang" untuk mempertegas bahwa buaya disini adalah binatang bukan manusia.</p>
 
-<div style="border: 2px solid #0180cf; height: 70px; overflow-x: scroll; overflow-y: scroll; width: auto;">
-<div style="width: 1000%;">
-
-&lt;p&gt;
-<br />
-Buaya adalah &lt;em&gt;binatang&lt;&frasl;em&gt; buas
-<br />
-&lt;&frasl;p&gt;
-
-</div>
-</div>
+<pre class="html">
+  <code>
+    
+  &#60;!DOCTYPE html&#62; 
+  &#60;html&#62; 
+  &#60;head&#62; 
+  &#60;meta charset="UTF-8"&#62; 
+  &#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+  &#60;title&#62;Belajar Html em&#60;/title&#62; 
+  &#60;/head&#62; 
+  &#60;body&#62; 
+  
+  &#60;p&#62;Buaya adalah &#60;em&#62;Binatang&#60;/em&#62; buas&#60;/p&#62; 
+  
+  &#60;/body&#62; 
+  &#60;/html&#62;
+    
+  </code>
+</pre>
 
 <h3>Hasil Penulisan</h3>
 <p>Buaya adalah <em>Binatang</em> buas!!!<br /><br />
@@ -35,5 +45,7 @@ Buaya adalah &lt;em&gt;binatang&lt;&frasl;em&gt; buas
 Untuk Keterangan lebih jelas silahkan Kunjungi situsweb <a href="https://www.apacara.com/tutorial/html/html-em-tag.html" target="_blank">apacara</a>
 </p>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
