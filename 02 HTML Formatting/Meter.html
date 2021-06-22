@@ -8,23 +8,72 @@
   <title>Tentang Element / Tag &lt;meter&gt;</title> 
   </head>
 <body>
-  
-<pre>
-<code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="id"&gt;
-&lt;head&gt;
-  &lt;title&gt;Tentang Element / Tag Meter &lt;/title&gt;
-&lt;/head&gt;
 
-&lt;body&gt;
-  &lt;p&gt;Hello Wolrd&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<h1>HTML meter tag | belajar &#60;meter&#62; element</h1>
+<h2>Deskripsi</h2>
+<p>
+<blockquote>
+<strong>HTML</strong> &lt;meter&gt; element digunakan untuk mengukur data berdasarkan tingkat tertentu. Memeteri data dengan bilangan yang menunjukkan tingkat meteran atau dikenal dengan istilah gauge.
+<br><br />
+Contohnya, digunakan untuk menunjukkan kapasitas hardisk / memory disk dan hasil pencarian (query result).
+<br><br />
+&lt;meter&gt; tag tidak boleh digunakan apabila menunjukkan sebuah progres (berlangsungnya sebuah kegiatan). Untuk hal ini, gunakan <strong>&lt;progress&gt;</strong> element.
+  </blockquote>
+</p>
+
+<h3>Di Bawah Ini Merupakan Contoh Penulisan & Hasil Contoh Penulisan</h3>
+<h4>Contoh 1</h4>
+<p>Contoh lengkap</p>
+
+<pre class="html">
+<code>
+
+&#60;!DOCTYPE html&#62; 
+&#60;html&#62; 
+&#60;head&#62; 
+&#60;meta charset="UTF-8"&#62; 
+&#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+&#60;title&#62;Belajar Html meter&#60;/title&#62; 
+&#60;/head&#62; 
+&#60;body&#62; 
+
+&#60;label for="disk_c"&#62;Disk usage C:&#60;/label&#62;
+&#60;meter id="disk_c" max="100" min="0" value="80"&#62;80 dari 100&#60;/meter&#62;
+
+&#60;label for="disk_d"&#62;Disk usage D:&#60;/label&#62;
+&#60;meter id="disk_d" max="10" min="0" value="0.5"&#62;5% dari 10%&#60;/meter&#62;
+
+  
+&#60;/body&#62; 
+&#60;/html&#62;
 
 </code>
 </pre>
+
+<h3>Hasil Contoh Penulisan</h3>
   
+<label for="disk_c">Disk usage C :</label>
+<meter id="disk_c" max="100" min="0" value="80">80 Dari 100</meter>
+
+<br><br />
+
+<label for="disk_d">Disk usage D :</label>
+<meter id="disk_d" max="10" min="0" value="0.5">5% dari 10%</meter>
+
+<br /><br />
+<hr />
+
+
+<p>
+  Untuk Keterangan Lebih Lanjut Silahkan Kunjungi Website Apacara.com <a href="https://www.google.com/amp/s/www.apacara.com/tutorial/html/html-meter-tag.html" target="_blank"><button type="submit">Klik Disini</button></a>
+  
+  <br /><br />
+  
+  Untuk Keterangan Lebih Lanjut Silahkan Kunjungi Website W3school <a href="https://www.w3schools.com/tags/tag_meter.asp#:~:text=The%20tag%20defines%20a,as%20in%20a%20progress%20bar)." target="_blank"><button type="submit">Klik Disini</button></a>
+  
+  
+  
+  </p>
   
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>    
