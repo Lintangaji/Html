@@ -3,12 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css" media="all">
+
+.senior{
+  font-size: 55px;
+  
+}
+.junior{
+  font-size: 55px;
+  position: relative;
+  left: 25px;
+  
+}
+
+</style>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
 <title>HTML ruby tag | belajar &#60;ruby&#62; element</title>
 </head>
 <body>
   
-  <h1>HTML ruby tag | belajar &#60;ruby&#62; element</h1>
-  <h2>Deskripsi</h2>
+<h1>HTML ruby tag | belajar &#60;ruby&#62; element</h1>
+<h2>Deskripsi</h2>
+<blockquote cite="https://www.w3schools.com/tags/tag_ruby.asp">
+Tag &#60;ruby&#62; menentukan penjelasan ruby.
+<br /><br />
+Anotasi semacam ini sering digunakan dalam publikasi Jepang.
+<br /><br />
+<strong>Gunakan &#60;ruby&#62; bersama dengan &#60;rt&#62; dan &#60;rp&#62;</strong> : &#60;ruby&#62; elemen terdiri dari satu atau lebih dari beberapa karakter yang memerlukan penjelasan / pengucapan, <mark>dan elemen &#60;rt&#62; yang memberikan informasi tersebut,</mark> dan elemen &#60;rp&#62; yang menentukan apa yang harus ditampilkan browser yang tidak mendukung anotasi ruby.
+</blockquote>
 
+<h3>Di Bawah Ini Merupakan Contoh Penulisan Dan Hasil Contoh Penulisan </h3>
+
+<h4>Contoh 1</h4>
+<p>HTML &#60;ruby&#62; element</p>
+
+<pre class="html">
+<code>
+  
+&#60;!DOCTYPE html&#62; 
+&#60;html&#62; 
+&#60;head&#62; 
+&#60;meta charset="UTF-8"&#62; 
+&#60;meta name="viewport" content="width=device-width, initial-scale=1"&#62; 
+&#60;title&#62;Belajar Html ruby&#60;/title&#62; 
+&#60;/head&#62; 
+&#60;body&#62; 
+
+&#60;ruby&#62;
+
+先輩 &#60;rp&#62;(&#60;/rp&#62; &#60;rt&#62;sempai&#60;/rt&#62; &#60;rp&#62;)&#60;/rp&#62;
+
+後輩 &#60;rp&#62;(&#60;/rp&#62; &#60;rt&#62;kōhai&#60;/rt&#62; &#60;rp&#62;)&#60;/rp&#62;
+
+&#60;/ruby&#62;
+  
+&#60;/body&#62; 
+&#60;/html&#62;
+
+</code>
+</pre>
+
+<h3>Hasil Contoh Penulisan</h3>
+
+<ruby class="senior">
+先輩 <rp><rt>sempai</rt></rp>
+</ruby>
+
+<ruby class="junior">
+後輩 <rp><rt>kōhai</rt></rp>
+</ruby>
+
+<p>
+  Contoh di atas menunjukkan jika penulisan kata ( 先輩 senpai ) menggunakan huruf N dan jika di baca menjadi <u>sempai</u>
+</p>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
