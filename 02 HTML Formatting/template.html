@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atelier-cave-dark.min.css">
+<title>HTML template tag | belajar &#60;template&#62; element</title>
+</head>
+<body>
+  
+  <h1>HTML template tag | belajar &#60;template&#62; element</h1>
+  <h2>Deskripsi</h2>
+  <blockquote cite="https://www.w3schools.com/tags/tag_template.asp">
+    
+    Gunakan &#60;template&#62; untuk menyimpan beberapa konten yang akan disembunyikan saat halaman dimuat. Gunakan JavaScript untuk menampilkannya:
+<br><br><br><br>
+
+Tag &#60;template&#62; digunakan sebagai wadah untuk menampung beberapa konten HTML tersembunyi dari pengguna ketika beban halaman.
+<br><br>
+Konten di dalam &#60;template&#62; dapat dirender dengan JavaScript.
+<br><br>
+Anda dapat menggunakan &#60;template&#62; tag jika Anda memiliki beberapa kode HTML yang ingin Anda gunakan berulang kali,.
+    
+  </blockquote>
+  
+<h3>Di Bawah Ini Merupakan Contoh Penulisan Dan Hasil Contoh Penulisan </h3>
+
+<pre class="html">
+  <code>
+    HTML &#60;template&#62; Tag Contoh Gunakan &#60;template&#62; untuk menyimpan beberapa konten
+    yang akan disembunyikan saat halaman dimuat. Gunakan JavaScript untuk menampilkannya: 
+    
+    
+    &#60;button 
+    onclick="showContent()"&#62;
+    Show hidden content&#60;/button&#62;
+    
+    &#60;template&#62; 
+    &#60;h2&#62;Flower&#60;/h2&#62; 
+    &#60;img src="img_white_flower.jpg" width="214" height="204"&#62; 
+    &#60;/template&#62; 
+    
+    &#60;script&#62; function showContent() { 
+    var temp = document.getElementsByTagName("template")[0]; 
+    var clon = temp.content.cloneNode(true); document.body.appendChild(clon); } 
+    &#60;/script&#62;
+  </code>
+</pre>
+
+
+
+<button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="../Portfolio/images/about.jpg" width="350" height="400">
+</template>
+
+<script>
+function showContent() {
+  var temp = document.getElementsByTagName("template")[0];
+  var clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
